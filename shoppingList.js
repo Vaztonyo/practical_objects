@@ -23,12 +23,17 @@ var shoppingList2 = [
 ];
 
 var shoppingList3 = [
-    { itemName : 'Coke', price : 18.00 },
-    { itemName : 'Muffins', price : 12.00 },
+    { itemName : 'Coke', price : 18.50 },
+    { itemName : 'Muffins', price : 13.50 },
     { itemName : 'Cheese', price : 19.50 },
-    { itemName : 'Donuts', price : 11.50}
+    { itemName : 'Donuts', price : 12.50},
+    { itemName : 'Boerewors Roll', price : 16.50}
 ];
 
-console.log(shoppingList(shoppingList1));
-console.log(shoppingList(shoppingList2));
-console.log(shoppingList(shoppingList3));
+assert.equal(shoppingList(shoppingList1), 37.50);
+assert.equal(shoppingList(shoppingList2), 58);
+assert.equal(shoppingList(shoppingList3), 80.50);
+
+// console.log(shoppingList(shoppingList1));
+// console.log(shoppingList(shoppingList2));
+// console.log(shoppingList(shoppingList3));
