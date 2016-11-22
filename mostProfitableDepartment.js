@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 function mostProfitableDepartment(data){
   var NumOfSales = 0;
   var depart = [];
@@ -29,4 +31,5 @@ var salesData = [
     {department : 'carpentry', sales : 16109, day : 'Friday'},
 ];
 
-console.log(mostProfitableDepartment(salesData));
+assert.equal(mostProfitableDepartment(salesData), 'outdoor');
+// console.log(mostProfitableDepartment(salesData));
