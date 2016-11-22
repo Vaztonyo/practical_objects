@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 function mostProfitableDay(data){
   var NumOfSales = 0;
   var theDay = [];
@@ -29,4 +31,5 @@ var salesData = [
     {department : 'carpentry', sales : 16109, day : 'Friday'},
 ];
 
-console.log(mostProfitableDay(salesData));
+assert.equal(mostProfitableDay(salesData), 'Thursday');
+// console.log(mostProfitableDay(salesData));
