@@ -1,8 +1,8 @@
-function findItemsOver20(list){
+function findItemsOver20(list, limit){
   var itemOver20 = [];
   var price1 = 0;
   for (i in list){
-    if (list[i].price > 20){
+    if (list[i].price > limit){
       itemOver20.push(list[i])
     }
   }
@@ -17,4 +17,4 @@ var itemList = [
 ];
 
 console.log('Item List =')
-console.log(findItemsOver20(itemList))
+console.log(findItemsOver20(itemList, 20))
