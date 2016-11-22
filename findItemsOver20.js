@@ -16,4 +16,5 @@ var itemList = [
     {name : 'apples', price : 3},
 ];
 
+console.log('Item List =')
 console.log(findItemsOver20(itemList))
