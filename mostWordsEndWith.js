@@ -31,13 +31,14 @@ function mostWordsEndWith(string) {
       lastLetters[character] = 1;
     }
   };
+
   // Below is a map that you can extract to get a commonly found letter from that sentence
   result.letter = char;
   result.letterCount = counter;
   return result;
-
 };
 
 var sentence = 'Down by the river there is a man that quiver and shiver , but he needs to deliver a packet that he think is a big racket and a packet of gum .'
 
 assert.deepEqual(mostWordsEndWith(sentence), { letter: 't', letterCount: 6 });
+// console.log(mostWordsEndWith(sentence));
